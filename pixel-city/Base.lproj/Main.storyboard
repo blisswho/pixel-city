@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-AC-qdc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpo-Bc-UfE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -47,11 +47,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4G-KL-FLB">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Op4-Tx-TPg"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fR-tr-9X6">
-                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <rect key="frame" x="309" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MZx-fV-0yf"/>
                                     <constraint firstAttribute="width" constant="50" id="dmG-4e-V3m"/>
@@ -67,12 +70,11 @@
                             <constraint firstItem="mpo-Bc-UfE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0cn-89-7T6"/>
                             <constraint firstAttribute="bottom" secondItem="E4G-KL-FLB" secondAttribute="bottom" id="4PW-8C-TTQ"/>
                             <constraint firstItem="iMe-AC-qdc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Fv-Rh-zyb"/>
+                            <constraint firstItem="E4G-KL-FLB" firstAttribute="top" secondItem="1fR-tr-9X6" secondAttribute="bottom" constant="20" id="7ZG-kH-ltr"/>
                             <constraint firstItem="E4G-KL-FLB" firstAttribute="top" secondItem="iMe-AC-qdc" secondAttribute="bottom" id="7dq-Kb-Ahh"/>
-                            <constraint firstItem="iMe-AC-qdc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QgZ-Po-F7x"/>
                             <constraint firstItem="mpo-Bc-UfE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R3I-G5-d2z"/>
                             <constraint firstItem="iMe-AC-qdc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SYh-r2-W33"/>
                             <constraint firstItem="mpo-Bc-UfE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YSu-Tv-X7u"/>
-                            <constraint firstItem="E4G-KL-FLB" firstAttribute="top" secondItem="1fR-tr-9X6" secondAttribute="bottom" constant="20" id="cUw-or-7q6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fR-tr-9X6" secondAttribute="trailing" constant="16" id="jQ8-cj-Dw7"/>
                             <constraint firstAttribute="trailing" secondItem="E4G-KL-FLB" secondAttribute="trailing" id="pvw-xH-HbY"/>
                             <constraint firstItem="iMe-AC-qdc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pwq-CY-YwK"/>
@@ -82,6 +84,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="iMe-AC-qdc" id="id6-ho-dpP"/>
+                        <outlet property="pullUpView" destination="E4G-KL-FLB" id="gJm-XP-Gqy"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="Op4-Tx-TPg" id="DiC-Ik-Reh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
