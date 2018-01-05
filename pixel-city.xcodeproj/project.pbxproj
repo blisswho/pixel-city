@@ -13,6 +13,7 @@
 		635D0FC51FFEFC1400F574FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635D0FC41FFEFC1400F574FC /* Assets.xcassets */; };
 		635D0FC81FFEFC1400F574FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635D0FC61FFEFC1400F574FC /* LaunchScreen.storyboard */; };
 		63B5C3F01FFF124800D27C65 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5C3EF1FFF124800D27C65 /* DroppablePin.swift */; };
+		63ED0A5D200031A5001D418E /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED0A5C200031A5001D418E /* PhotoCell.swift */; };
 		BC3E79EF265AF1F710BD1660 /* Pods_pixel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C6467C276C5C8CF95AF26E /* Pods_pixel_city.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		635D0FC71FFEFC1400F574FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		635D0FC91FFEFC1400F574FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B5C3EF1FFF124800D27C65 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		63ED0A5C200031A5001D418E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		68BCA6EC384FB0A16AC3FF2D /* Pods-pixel-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.release.xcconfig"; sourceTree = "<group>"; };
 		6F6699B89041CB4CA1400186 /* Pods-pixel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.debug.xcconfig"; sourceTree = "<group>"; };
 		D9C6467C276C5C8CF95AF26E /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				63B5C3EF1FFF124800D27C65 /* DroppablePin.swift */,
+				63ED0A5C200031A5001D418E /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63ED0A5D200031A5001D418E /* PhotoCell.swift in Sources */,
 				635D0FC01FFEFC1400F574FC /* MapVC.swift in Sources */,
 				63B5C3F01FFF124800D27C65 /* DroppablePin.swift in Sources */,
 				635D0FBE1FFEFC1400F574FC /* AppDelegate.swift in Sources */,
